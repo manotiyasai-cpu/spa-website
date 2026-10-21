@@ -1,0 +1,243 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Assessment Form | Holistic Health Centre</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="assessment.js" defer></script>
+</head>
+<body class="form-page">
+
+<header class="form-header">
+  <a href="index.html">← Back to Website</a>
+  <span>Holistic Health Centre <em>with Ayurvedic Spa</em></span>
+</header>
+
+<main class="form-container">
+  <div class="form-title">
+    <div class="logo">❀</div>
+    <h1>Holistic Health Centre</h1>
+    <p>with Ayurvedic Spa</p>
+    <h2>Client Assessment Form</h2>
+    <p class="form-description">
+      Please complete this form before your spa treatment.
+    </p>
+  </div>
+
+  <form id="assessmentForm">
+
+    <fieldset class="form-section">
+      <legend>Client Details</legend>
+
+      <div class="form-grid">
+        <label class="full">Name (First & Last)
+          <input name="fullName" required autocomplete="name">
+        </label>
+
+        <label>Age
+          <input name="age" type="number" min="1" max="120" required>
+        </label>
+
+        <fieldset class="gender-field">
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </fieldset>
+
+        <label>Email
+          <input name="email" type="email" autocomplete="email">
+        </label>
+
+        <label>Country
+          <input name="country" autocomplete="country-name">
+        </label>
+
+        <label class="full">Contact Number
+          <input name="phone" type="tel" required autocomplete="tel">
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-section">
+      <legend>Questions</legend>
+
+      <div class="question">
+        <p><b>1.</b> What is your main reason for taking body spa therapy?</p>
+        <div class="options">
+          <label><input type="checkbox" name="reason" value="Stress and relaxation"> Stress and relaxation</label>
+          <label><input type="checkbox" name="reason" value="Muscle tightness"> Muscle tightness</label>
+          <label><input type="checkbox" name="reason" value="Body stiffness"> Body stiffness</label>
+          <label><input type="checkbox" name="reason" value="Tiredness"> Tiredness</label>
+          <label><input type="checkbox" name="reason" value="Dry skin"> Dry skin</label>
+          <label><input type="checkbox" name="reason" value="General wellness"> General wellness</label>
+          <label>Other <input name="reasonOther" class="inline-input"></label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><b>2.</b> Which area needs attention?</p>
+        <div class="options">
+          <label><input type="checkbox" name="area" value="Neck and shoulders"> Neck and shoulders</label>
+          <label><input type="checkbox" name="area" value="Back"> Back</label>
+          <label><input type="checkbox" name="area" value="Arms and hands"> Arms and hands</label>
+          <label><input type="checkbox" name="area" value="Legs and feet"> Legs and feet</label>
+          <label><input type="checkbox" name="area" value="Full body"> Full body</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><b>3.</b> How long have you had this concern?</p>
+        <div class="options">
+          <label><input type="radio" name="duration" value="A few days"> A few days</label>
+          <label><input type="radio" name="duration" value="A few weeks"> A few weeks</label>
+          <label><input type="radio" name="duration" value="Several months"> Several months</label>
+          <label><input type="radio" name="duration" value="More than a year"> More than a year</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><b>4.</b> Do you have any diagnosed medical conditions? Please specify.</p>
+        <textarea name="medicalConditions" rows="2"></textarea>
+      </div>
+
+      <div class="question">
+        <p><b>5.</b> Are you currently taking any medicines?</p>
+        <div class="options">
+          <label><input type="radio" name="medicines" value="Yes"> Yes</label>
+          <label><input type="radio" name="medicines" value="No"> No</label>
+        </div>
+        <label>If yes, please specify
+          <input name="medicineDetails">
+        </label>
+      </div>
+
+      <div class="question">
+        <p><b>6.</b> Do you have any of the following?</p>
+        <div class="options">
+          <label><input type="checkbox" name="conditions" value="Low blood pressure"> Low blood pressure</label>
+          <label><input type="checkbox" name="conditions" value="High blood pressure"> High blood pressure</label>
+          <label><input type="checkbox" name="conditions" value="Diabetes"> Diabetes</label>
+          <label><input type="checkbox" name="conditions" value="Heart or circulation problems"> Heart or circulation problems</label>
+          <label><input type="checkbox" name="conditions" value="Varicose veins or blood clots"> Varicose veins or history of blood clots</label>
+          <label><input type="checkbox" name="conditions" value="Recent injury or surgery"> Recent injury or surgery</label>
+          <label><input type="checkbox" name="conditions" value="Skin allergy or infection"> Skin allergy or infection</label>
+          <label><input type="checkbox" name="conditions" value="Pregnancy"> Pregnancy</label>
+          <label><input type="checkbox" name="conditions" value="None of these"> None of these</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><b>7.</b> Do you currently have fever, unusual swelling, unexplained pain, or a new skin rash?</p>
+        <div class="options">
+          <label><input type="radio" name="symptoms" value="Yes"> Yes</label>
+          <label><input type="radio" name="symptoms" value="No"> No</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><b>8.</b> Do you have any allergies to massage oils, creams, or scrubs?</p>
+        <div class="options">
+          <label><input type="radio" name="allergies" value="Yes"> Yes</label>
+          <label><input type="radio" name="allergies" value="No"> No</label>
+        </div>
+        <label>If yes, please specify
+          <input name="allergyDetails">
+        </label>
+      </div>
+
+      <div class="question">
+        <p><b>9.</b> Which therapy would you prefer?</p>
+        <div class="options">
+          <label><input type="checkbox" name="therapy" value="Swedish massage"> Swedish massage</label>
+          <label><input type="checkbox" name="therapy" value="Deep tissue massage"> Deep tissue massage</label>
+          <label><input type="checkbox" name="therapy" value="Ayurvedic massage"> Ayurvedic massage</label>
+          <label><input type="checkbox" name="therapy" value="Aromatherapy"> Aromatherapy</label>
+          <label><input type="checkbox" name="therapy" value="Body scrub"> Body scrub</label>
+          <label><input type="checkbox" name="therapy" value="Body polish"> Body polish</label>
+          <label><input type="checkbox" name="therapy" value="Foot massage"> Foot massage</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><b>10.</b> What pressure do you prefer?</p>
+        <div class="options">
+          <label><input type="radio" name="pressure" value="Light"> Light</label>
+          <label><input type="radio" name="pressure" value="Medium"> Medium</label>
+          <label><input type="radio" name="pressure" value="Firm"> Firm</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><b>11.</b> Have you had body spa therapy before?</p>
+        <div class="options">
+          <label><input type="radio" name="previousSpa" value="Yes"> Yes</label>
+          <label><input type="radio" name="previousSpa" value="No"> No</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <p><b>12.</b> Do you have any areas that should not be touched or massaged?</p>
+        <textarea name="avoidAreas" rows="2"></textarea>
+      </div>
+
+      <div class="question">
+        <p><b>13.</b> Client's main concern</p>
+        <textarea name="mainConcern" rows="2"></textarea>
+      </div>
+
+      <div class="question">
+        <p><b>14.</b> Areas requiring attention</p>
+        <textarea name="attentionAreas" rows="2"></textarea>
+      </div>
+
+      <div class="question">
+        <p><b>15.</b> Contraindications or precautions</p>
+        <textarea name="precautions" rows="2"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset class="form-section">
+      <legend>Therapist's Assessment</legend>
+      <div class="form-grid">
+        <label>Therapist Name
+          <input name="therapistName">
+        </label>
+        <label>Therapist Sign
+          <input name="therapistSign">
+        </label>
+      </div>
+    </fieldset>
+
+    <div class="consent">
+      <label>
+        <input type="checkbox" name="consent" required>
+        I confirm that the information provided is accurate to the
+        best of my knowledge and I will inform my therapist of any
+        changes before treatment.
+      </label>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="button">Submit Assessment</button>
+      <button type="button" id="printButton" class="button secondary">Print Form</button>
+      <button type="reset" class="button reset-button">Clear Form</button>
+    </div>
+
+    <p id="formMessage" role="status" aria-live="polite"></p>
+
+    <p class="small-note">
+      Demo version: this form does not yet send or store your answers.
+      A backend and database will be added later.
+    </p>
+  </form>
+</main>
+
+<footer class="footer">
+  <a href="index.html">← Return to website</a>
+</footer>
+
+</body>
+</html>
